@@ -1,0 +1,11 @@
+[dev]
+address = "localhost"
+port = 8008
+
+[staging]
+address = "localhost"
+port = 8888
+
+[prod]
+address = "localhost"
+port = 8000
