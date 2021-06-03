@@ -1,3 +1,12 @@
+#![feature(proc_macro_hygiene, decl_macro)]
+
+#[macro_use]
+extern crate rocket;
+
+mod api;
+
 fn main() {
-    println!("Hello, world!");
+    rocket::ignite()
+        .mount("/", routes![api::home::index, api::home::home])
+        .launch();
 }
