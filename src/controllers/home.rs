@@ -8,7 +8,7 @@ struct Response {
     message: String,
 }
 
-pub fn welcome(name: Option<String>, age: Option<String>) -> content::Json<String> {
+pub fn index(name: Option<String>, age: Option<String>) -> content::Json<String> {
     let mut response = Response {
         status: 200,
         message: format!("Hello, World!"),
